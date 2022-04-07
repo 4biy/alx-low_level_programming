@@ -4,7 +4,7 @@
 
 /**
  *
- *  * main - Entry point
+ * main - Entry point
  *
  *   *
  *
