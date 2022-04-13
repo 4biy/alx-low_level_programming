@@ -1,5 +1,5 @@
-#ifndef 4biy_H
-#define 4biy_H
+#ifndef TENSAYAME_H
+#define TENSAYAME_H
 
 
 char _putchar(char c);
@@ -16,4 +16,4 @@ int add(int one, int two);
 void print_to_98(int n);
 void print_times_table(int n);
 
-#endif /* Abiy_h */
+#endif /* Tensay_h */
