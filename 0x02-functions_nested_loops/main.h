@@ -1,5 +1,5 @@
-#ifndef TENSAYAME_H
-#define TENSAYAME_H
+#ifndef 4biy_H
+#define 4biy_H
 
 
 char _putchar(char c);
