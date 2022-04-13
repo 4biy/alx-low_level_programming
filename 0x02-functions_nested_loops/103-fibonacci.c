@@ -1,47 +1,24 @@
-#include "main.h"
+#include <stdio.h>
 /**
- * print_times_table - prints the times table for n.
- * @n: The multiplication table requested.
- * Return: Nothing.
- */
-void print_times_table(int n)
+  * main - sum even fibonacci numbers under 4 million.
+  * Return: Nothing.
+  */
+int main(void)
 {
-	int i, j, res;
+	unsigned long count, i, j, k, sums;
 
-	if (!(n > 15 || n < 0))
+	i = sums = 0;
+	j = 1;
+	for (count = 0; count < 50; count++)
 	{
-		for (i = 0; i <= n; i++)
+		k = i + j;
+		i = j;
+		j = k;
+		if (k % 2 == 0 && k < 4000000)
 		{
-			for (j = 0; j <= n; j++)
-			{
-				res = (i * j);
-				if (j != 0)
-				{
-					_putchar(',');
-					_putchar(' ');
-				}
-				if (res < 10 && j != 0)
-				{
-					_putchar(' ');
-					_putchar(' ');
-					_putchar((res % 10) + '0');
-				}
-				else if (res >= 10 && res < 100)
-				{
-					_putchar(' ');
-					_putchar((res / 10) + '0');
-					_putchar((res % 10) + '0');
-				}
-				else if (res >= 100 && j != 0)
-				{
-					_putchar((res / 100) + '0');
-					_putchar((res / 10) % 10 + '0');
-					_putchar((res % 10) + '0');
-				}
-				else
-					_putchar((res % 10) + '0');
-			}
-			_putchar('\n');
+			sums += k;
 		}
 	}
+	printf("%lu\n", sums);
+	return (0);
 }
