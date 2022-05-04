@@ -1,0 +1,1 @@
+Excercise on static libraries
